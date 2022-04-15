@@ -3,7 +3,7 @@ ABOUT ME:
 - 👀 I’m an B.Tech UG at ITER, SOA University.
 - 🌱 I’m currently learning Java and Python development.
 - 💞️ I’m looking to try cool and amazing products based on ML and AI.
-- 📫 How to reach me: theankitdash@gmail.com
+- 📫 How to reach me: ankitdash3037@gmail.com
 - 😄 Pronouns: He/His/Him🧑
 - ⚡ Fun fact: I try to act smart when I am alone...
 
