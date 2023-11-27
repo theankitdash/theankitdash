@@ -1,7 +1,7 @@
 ABOUT ME:
 - 👋 Hi, I’m @theankitdash
-- 👀 I’m an B.Tech UG at ITER, SOA University.
-- 🌱 I’m currently working on Java and Python development.
+- 👀 I completed B.Tech UG at ITER, SOA University.
+- 🌱 I’m currently working on Python development.
 - 💞️ I’m looking to try cool and amazing products based on hardware and software.
 - 📫 How to reach me: ankitdash3037@gmail.com
 - 😄 Pronouns: He/His/Him🧑
