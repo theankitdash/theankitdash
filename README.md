@@ -2,7 +2,7 @@
 
 ###
 
-<p align="left">I'm Ankit Dash, a Passionate Learner with a Love for Technology.</p>
+<p align="left">I'm Ankit Dash, a Passionate Learner with a Love for Technology💻.</p>
 
 ###
 
@@ -14,7 +14,7 @@
   ☕ Turning Caffeine into Code since 2020. <br>
   🌱 I'm currently working on Python AI Development.<br>
   🎯 Goals: Cool and Amazing Products based on Hardware and Software.<br>
-  🔭 Exploring: New Technologies, Exciting Places 🌍, and Diverse Cultures.<br>
+  🔭 Exploring: New Technologies💡, Exciting Places 🌍, and Diverse Cultures.<br>
   💬 Ask Me About: Tech trends, Regional Movies, and Indian cinema 🎬.<br>
   🎲 Fun fact: I try to act smart when I am alone.</p>
 
