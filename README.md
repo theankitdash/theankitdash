@@ -12,7 +12,7 @@
 
 <p align="left">
   ☕ Turning Caffeine into Code since 2020. <br>
-  🌱 I'm currently working on Python AI Development.<br>
+  🌱 I'm currently working on Python 🐍 AI Development.<br>
   🎯 Goals: Cool and Amazing Products based on Hardware and Software.<br>
   🔭 Exploring: New Technologies💡, Exciting Places 🌍, and Diverse Cultures.<br>
   💬 Ask Me About: Tech trends, Regional Movies, and Indian cinema 🎬.<br>
