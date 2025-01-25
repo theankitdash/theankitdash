@@ -56,10 +56,11 @@ header .logo {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #1a202c, #2d3748); /* Darker gradient for better contrast */
+    background: linear-gradient(to right, #667eea, #764ba2); /* Darker gradient for better contrast */
     color: white;
     padding: 4rem 2rem;
     text-align: center;
+
 }
 
 .hero h1 {
@@ -69,17 +70,18 @@ header .logo {
 }
 
 .hero span {
-    color: #00b0ff; /* Bright cyan for emphasis */
+    color: #ff6b6b; /* Bright cyan for emphasis */
 }
 
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
+    color: white;
 }
 
 .hero .btn {
     padding: 1rem 2rem;
-    background-color: #00b0ff; /* Bright button for attention */
+    background-color: #ff6b6b; /* Bright button for attention */
     color: white;
     text-decoration: none;
     border-radius: 50px;
