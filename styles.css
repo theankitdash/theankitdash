@@ -154,7 +154,8 @@ p {
 /* Skills Section */
 .skills-grid {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     margin-top: 2rem;
 }
