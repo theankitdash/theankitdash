@@ -11,7 +11,7 @@
 ###
 
 # 💫 About Me:
-☕ Turning Caffeine into Code since 2020.<br>🌱 Currently Learning: Focusing on Python 🐍 AI Development.<br>🎯 Goals: Cool and Amazing Products based on Hardware and Software.<br>🔭 Exploring: New Technologies💡, Exciting Places 🌍, and Diverse Cultures.<br>💬 Ask Me About: Tech trends, Regional Movies, and Indian cinema 🎬.<br>🎲 Fun fact: I’m a lot more open with my close friends 😄.
+☕ Turning Caffeine into Code since 2020.<br>🌱 Currently Focusing on Python 🐍 AI Development.<br>🎯 Goals: Cool and Amazing Products based on Hardware and Software.<br>🔭 Exploring: New Technologies💡, Exciting Places 🌍, and Diverse Cultures.<br>💬 Ask Me About: Tech trends, Regional Movies, and Indian cinema 🎬.<br>🎲 Fun fact: I’m a lot more open with my close friends 😄.
 
 
 ## 🌐 Socials:
