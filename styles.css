@@ -85,6 +85,20 @@ header nav ul li a:hover {
   color: #121212;
 }
 
+.resume-link {
+      position: fixed;
+      top: 10px;
+      right: 20px;
+      font-size: 14px;
+    }
+    .resume-link a {
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .resume-link a:hover {
+      text-decoration: underline;
+    }
+
 /* ===========================================
    About Page Styles (Timeline)
    =========================================== */
