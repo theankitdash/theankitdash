@@ -15,7 +15,7 @@ A modern, premium portfolio website built with Next.js 15, TypeScript, and custo
 
 ## 📋 Prerequisites
 
-- Node.js 18+ installed
+- Node.js 22+ installed
 - npm or yarn package manager
 
 ## 🛠️ Installation
