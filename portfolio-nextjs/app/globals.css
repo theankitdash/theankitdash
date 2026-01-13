@@ -135,6 +135,30 @@ a:hover::after {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  position: relative;
+}
+
+.nav-brand::after {
+  content: 'See my resume';
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-10px);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #B0B0B0;
+  -webkit-text-fill-color: #B0B0B0;
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+  pointer-events: none;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.nav-brand:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
 }
 
 .nav-links {

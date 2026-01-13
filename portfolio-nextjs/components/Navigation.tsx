@@ -13,9 +13,14 @@ export default function Navigation() {
     return (
         <nav className="nav">
             <div className="nav-container">
-                <Link href="/" className="nav-brand">
+                <a
+                    href="https://drive.google.com/file/d/11FlbGpp1NmTIeSQvAo1AhNVHJsHIgZwW/view?usp=drive_link"
+                    className="nav-brand"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     Ankit Dash
-                </Link>
+                </a>
                 <ul className="nav-links">
                     <li>
                         <Link href="/" className={isActive('/')}>
