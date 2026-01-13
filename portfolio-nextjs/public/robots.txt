@@ -1,0 +1,6 @@
+# robots.txt for Ankit Dash Portfolio
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://theankitdash.netlify.app/sitemap.xml

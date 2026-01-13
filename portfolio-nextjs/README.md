@@ -6,7 +6,7 @@ A modern, premium portfolio website built with Next.js 15, TypeScript, and custo
 
 - **Premium Dark Theme**: Glassmorphism effects with smooth animations
 - **Three Main Pages**:
-  - **Home**: Personal bio + 2 featured projects
+  - **Home**: Personal bio + 3 featured projects
   - **Work**: Complete project showcase with video demos on hover
   - **Creative**: Instagram video integration
 - **Fully Responsive**: Optimized for mobile, tablet, and desktop

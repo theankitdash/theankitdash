@@ -3,7 +3,7 @@ import { getUpcomingProjects, getCompletedProjects } from '@/data/projects'
 
 export const metadata = {
     title: 'Work - Ankit Dash',
-    description: 'Explore my AI/ML projects and automation solutions',
+    description: 'Building Smart Automations with AI, Data & Workflow Intelligence',
 }
 
 export default function WorkPage() {
