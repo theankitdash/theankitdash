@@ -4,7 +4,7 @@ import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-    title: 'Ankit Dash - AI/ML Engineer & Tech Enthusiast',
+    title: 'Ankit Dash - Portfolio',
     description: 'A Tech Enthusiast with love for AI and Automation',
     keywords: ['Ankit Dash', 'AI Engineer', 'Automation Expert', 'Tech Enthusiast', 'Machine Learning', 'Python Developer', 'Next.js', 'n8n Workflows', 'Data Science', 'AI Automation', 'Web Development', 'React', 'TypeScript', 'Portfolio'],
     authors: [{ name: 'Ankit Dash' }],
