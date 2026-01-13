@@ -40,7 +40,7 @@ export default function Home() {
                 {/* Call to Action */}
                 <section className="cta-section">
                     <p className="cta-text">
-                        Let's collaborate.<br /> Feel free to drop me a line about your project or follow me on social networks to stay updated.
+                        Let&apos;s collaborate.<br /> Feel free to drop me a line about your project or follow me on social networks to stay updated.
                     </p>
                 </section>
             </div>

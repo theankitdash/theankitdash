@@ -54,7 +54,7 @@ export default function CreativePage() {
                                         <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>📸</div>
                                         <p>{video.placeholder}</p>
                                         <p style={{ fontSize: '0.9rem', marginTop: '1rem', color: '#666' }}>
-                                            To add: Go to Instagram → Select Reel → Click "..." → "Embed" → Copy embed code
+                                            To add: Go to Instagram → Select Reel → Click &quot;...&quot; → &quot;Embed&quot; → Copy embed code
                                         </p>
                                     </div>
                                 </div>
