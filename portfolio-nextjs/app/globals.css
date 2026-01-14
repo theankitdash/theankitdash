@@ -64,21 +64,6 @@ body {
   position: relative;
 }
 
-/* Hide default cursor on desktop for magnetic cursor */
-@media (min-width: 1024px) {
-  body {
-    cursor: none;
-  }
-
-  a,
-  button,
-  .bento-item,
-  .skill-tag,
-  .bento-skill-tag {
-    cursor: none;
-  }
-}
-
 body::before {
   content: '';
   position: fixed;

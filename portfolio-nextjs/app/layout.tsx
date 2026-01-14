@@ -3,7 +3,7 @@ import './globals.css'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import AnimatedBackground from '@/components/AnimatedBackground'
-import MagneticCursor from '@/components/MagneticCursor'
+
 
 export const metadata: Metadata = {
     title: 'Ankit Dash - Portfolio',
@@ -51,7 +51,7 @@ export default function RootLayout({
                 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
             </head>
             <body>
-                <MagneticCursor />
+
                 <AnimatedBackground />
                 <div className="page-wrapper">
                     <Navigation />
