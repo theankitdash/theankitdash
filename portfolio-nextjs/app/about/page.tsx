@@ -1,3 +1,5 @@
+import ScrollReveal from '@/components/ScrollReveal'
+
 export const metadata = {
     title: 'About - Ankit Dash',
     description: 'My craft is building useful experiences for real people—keeping ego out, function first, and creativity free to do its job',
@@ -40,20 +42,24 @@ export default function AboutPage() {
     return (
         <main className="main-content">
             <div className="container">
-                <h1 className="text-center mb-3">About Me</h1>
-                <div className="intro text-center">
-                    <p style={{ fontSize: '1.2rem', color: '#B0B0B0', maxWidth: '700px', margin: '0 auto 3rem' }}>
-                        I build with code, edit with intent, roam without roots, and study films like systems—technology is the thread tying it all together.
-                    </p>
-                </div>
+                <ScrollReveal>
+                    <h1 className="text-center mb-3">About Me</h1>
+                    <div className="intro text-center">
+                        <p style={{ fontSize: '1.2rem', color: '#B0B0B0', maxWidth: '700px', margin: '0 auto 3rem' }}>
+                            I build with code, edit with intent, roam without roots, and study films like systems—technology is the thread tying it all together.
+                        </p>
+                    </div>
+                </ScrollReveal>
 
                 {/* Timeline Section */}
                 <div className="timeline">
-                    {timeline.map((item) => (
-                        <div key={item.id} className="timeline-item">
-                            <h3>{item.year}</h3>
-                            <p>{item.description}</p>
-                        </div>
+                    {timeline.map((item, index) => (
+                        <ScrollReveal key={item.id} delay={index * 100}>
+                            <div className="timeline-item">
+                                <h3>{item.year}</h3>
+                                <p>{item.description}</p>
+                            </div>
+                        </ScrollReveal>
                     ))}
                 </div>
             </div>

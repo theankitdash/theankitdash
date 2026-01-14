@@ -25,7 +25,7 @@ export const projects: Project[] = [
         title: 'Interactive Multimodal AI Buddy – An AI Companion for Real-Time, Emotion-Aware Conversations',
         description: 'Architected a live-streaming AI companion integrating speech, vision, LangChain memory, and vector DB, delivering personalized interactions with ~85% emotion recognition and ~3s latency and 50+ managed events.',
         githubUrl: 'https://github.com/theankitdash/Interactive-Multimodal-AI-Buddy-An-AI-Companion-for-Real-Time-Emotion-Aware-Conversations',
-        skills: ['Python', 'LangChain', 'Vector DB', 'Speech Recognition', 'Computer Vision', 'AI/ML'],
+        skills: ['Gemini', 'CrewAI', 'Vector DB', 'Speech Recognition', 'Streamlit'],
         videoUrl: '', // User will add later
         featured: true
     },
@@ -34,7 +34,7 @@ export const projects: Project[] = [
         title: 'AI Nutritional Health Assistant: Personalized Guidance for Indian Diets',
         description: 'Built an AI-powered nutrition chatbot using FastAPI and LangChain with a RAG pipeline (FAISS) to deliver 90% accurate, personalized nutrition advice across 100+ context-aware queries and 4+ Indian regional cuisines.',
         githubUrl: 'https://github.com/theankitdash/AI-Nutritional-Health-Assistant-Personalized-Guidance-for-Indian-Diets',
-        skills: ['FastAPI', 'LangChain', 'RAG', 'FAISS', 'Python', 'AI/ML'],
+        skills: ['FastAPI', 'LangGraph', 'RAG', 'FAISS', 'AI/ML'],
         videoUrl: '', // User will add later
         featured: true
     },
@@ -52,7 +52,7 @@ export const projects: Project[] = [
         title: 'Personal Finance System for Expense Tracking and Analysis',
         description: 'Engineered a containerized analytics engine with multivariate anomaly detection (LOF, OneClass SVM, deep autoencoder), forecasting, drift analysis, and semantic clustering via REST APIs, delivering results in ∼3s on 10,000+ transactions.',
         githubUrl: 'https://github.com/theankitdash/Personal-Finance-System-for-Expense-Tracking-and-Analysis',
-        skills: ['Python', 'Machine Learning', 'Docker', 'REST API', 'Data Analytics'],
+        skills: ['Personal Finance', 'Machine Learning Algorithms', 'Statistical Data Analysis', 'REST APIs', 'Docker'],
         videoUrl: '', // User will add later
         featured: true
     },
@@ -61,7 +61,7 @@ export const projects: Project[] = [
         title: 'Administrator Controlled Timetable Based Automatic Facial Recognition Attendance System',
         description: 'Developed an ESP32-CAM-based facial recognition system with OpenCV for automated, timetable-linked attendance of 50+ students, achieving 85% accuracy and winning Best Presentation at SYMPOSIUM-2023.',
         githubUrl: 'https://github.com/theankitdash/Administrator-controlled-Timetable-based-Automatic-Facial-Recognition-Attendance-System',
-        skills: ['ESP32-CAM', 'OpenCV', 'Python', 'Computer Vision', 'IoT'],
+        skills: ['Python', 'Computer Vision', 'Pattern Recognition', 'ESP32 CAM', 'MySQL'],
         videoUrl: '', // User will add later
         featured: false
     }

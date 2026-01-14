@@ -14,24 +14,26 @@ export default function ProjectCard({ project, showVideo = false }: ProjectCardP
     return (
         <div className="project-card-wrapper">
             <div className="card">
-                <h3 className="mb-2">
-                    {project.githubUrl ? (
-                        <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                            {project.title}
-                        </a>
-                    ) : (
-                        project.title
-                    )}
-                </h3>
-                <p style={{ color: '#B0B0B0', marginBottom: '1rem' }}>
-                    {project.description}
-                </p>
-                <div className="skills">
-                    {project.skills.map((skill, index) => (
-                        <span key={index} className="skill-tag">
-                            {skill}
-                        </span>
-                    ))}
+                <div className="card-content">
+                    <h3 className="mb-2">
+                        {project.githubUrl ? (
+                            <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                                {project.title}
+                            </a>
+                        ) : (
+                            project.title
+                        )}
+                    </h3>
+                    <p style={{ color: '#B0B0B0', marginBottom: '1rem', flexGrow: 1 }}>
+                        {project.description}
+                    </p>
+                    <div className="skills" style={{ marginTop: 'auto' }}>
+                        {project.skills.map((skill, index) => (
+                            <span key={index} className="skill-tag">
+                                {skill}
+                            </span>
+                        ))}
+                    </div>
                 </div>
             </div>
 

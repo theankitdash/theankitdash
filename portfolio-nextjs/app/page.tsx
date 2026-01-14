@@ -1,4 +1,5 @@
-import ProjectCard from '@/components/ProjectCard'
+import BentoGrid from '@/components/BentoGrid'
+import ScrollReveal from '@/components/ScrollReveal'
 import { getFeaturedProjects } from '@/data/projects'
 
 export default function Home() {
@@ -12,37 +13,41 @@ export default function Home() {
                     <div className="hero-content fade-in-up">
                         <h1>ANKIT DASH</h1>
                         <p className="hero-subtitle">
-                            A Tech Enthusiast with love for AI and Automation.
+                            Tech Enthusiast crafting intelligent experiences with AI & Automation.<br />
+                            Transforming complex problems into elegant solutions.
                         </p>
                     </div>
                 </section>
 
                 {/* Quote Section */}
-                <section className="quote-section">
-                    <blockquote className="belief-quote">
-                        <p>
-                            My craft is building useful experiences for real people—keeping ego out,
-                            function first, and creativity free to do its job.
-                        </p>
-                    </blockquote>
-                </section>
+                <ScrollReveal>
+                    <section className="quote-section">
+                        <blockquote className="belief-quote">
+                            <p>
+                                My craft is building useful experiences for real people—keeping ego out,
+                                function first, and creativity free to do its job.
+                            </p>
+                        </blockquote>
+                    </section>
+                </ScrollReveal>
 
                 {/* Featured Projects Section */}
-                <section className="mt-4">
-                    <h2 className="text-center mb-4">Featured Projects</h2>
-                    <div className="project-grid">
-                        {featuredProjects.map((project) => (
-                            <ProjectCard key={project.id} project={project} />
-                        ))}
-                    </div>
-                </section>
+                <ScrollReveal delay={100}>
+                    <section className="mt-4">
+                        <h2 className="text-center mb-4">Featured Projects</h2>
+                        <BentoGrid projects={featuredProjects} />
+                    </section>
+                </ScrollReveal>
 
                 {/* Call to Action */}
-                <section className="cta-section">
-                    <p className="cta-text">
-                        Let&apos;s collaborate.<br /> Feel free to drop me a line about your project or follow me on social networks to stay updated.
-                    </p>
-                </section>
+                <ScrollReveal delay={200}>
+                    <section className="cta-section">
+                        <p className="cta-text">
+                            Let&apos;s collaborate and build something amazing together.<br />
+                            Drop me a line about your project or connect on social networks.
+                        </p>
+                    </section>
+                </ScrollReveal>
             </div>
         </main>
     )

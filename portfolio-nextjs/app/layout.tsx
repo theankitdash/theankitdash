@@ -2,10 +2,12 @@ import type { Metadata } from 'next'
 import './globals.css'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
+import AnimatedBackground from '@/components/AnimatedBackground'
+import MagneticCursor from '@/components/MagneticCursor'
 
 export const metadata: Metadata = {
     title: 'Ankit Dash - Portfolio',
-    description: 'A Tech Enthusiast with love for AI and Automation',
+    description: 'Tech Enthusiast crafting intelligent experiences with AI & Automation',
     keywords: ['Ankit Dash', 'AI Engineer', 'Automation Expert', 'Tech Enthusiast', 'Machine Learning', 'Python Developer', 'Next.js', 'n8n Workflows', 'Data Science', 'AI Automation', 'Web Development', 'React', 'TypeScript', 'Portfolio'],
     authors: [{ name: 'Ankit Dash' }],
     creator: 'Ankit Dash',
@@ -14,13 +16,13 @@ export const metadata: Metadata = {
         locale: 'en_US',
         url: 'https://theankitdash.netlify.app',
         title: 'Ankit Dash - AI/ML Engineer & Tech Enthusiast',
-        description: 'A Tech Enthusiast with love for AI and Automation',
+        description: 'Tech Enthusiast crafting intelligent experiences with AI & Automation',
         siteName: 'Ankit Dash Portfolio',
     },
     twitter: {
         card: 'summary_large_image',
         title: 'Ankit Dash - AI/ML Engineer & Tech Enthusiast',
-        description: 'A Tech Enthusiast with love for AI and Automation',
+        description: 'Tech Enthusiast crafting intelligent experiences with AI & Automation',
         creator: '@theankitdash',
     },
     robots: {
@@ -49,6 +51,8 @@ export default function RootLayout({
                 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
             </head>
             <body>
+                <MagneticCursor />
+                <AnimatedBackground />
                 <div className="page-wrapper">
                     <Navigation />
                     {children}
