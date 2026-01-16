@@ -12,11 +12,11 @@ export interface Project {
 export const projects: Project[] = [
     {
         id: '1',
-        title: 'n8n Automation Workflows',
-        description: 'Projects that you can deploy & use in your day-to-day lives coming soon!',
+        title: 'Multi Modal AGI',
+        description: 'Working on the MultiModal Assistant for Human like Experience!',
         githubUrl: '',
-        skills: ['n8n', 'Automation', 'Workflow'],
-        videoUrl: '',
+        skills: ['CrewAI', 'Automation', 'Raspberry Pi', 'IoT'],
+        videoUrl: '', // User will add later
         featured: false,
         upcoming: true
     },
@@ -25,16 +25,16 @@ export const projects: Project[] = [
         title: 'Interactive Multimodal AI Buddy – An AI Companion for Real-Time, Emotion-Aware Conversations',
         description: 'Architected a live-streaming AI companion integrating speech, vision, LangChain memory, and vector DB, delivering personalized interactions with ~85% emotion recognition and ~3s latency and 50+ managed events.',
         githubUrl: 'https://github.com/theankitdash/Interactive-Multimodal-AI-Buddy-An-AI-Companion-for-Real-Time-Emotion-Aware-Conversations',
-        skills: ['Gemini', 'CrewAI', 'Vector DB', 'Speech Recognition', 'Streamlit'],
+        skills: ['Gemini', 'CrewAI', 'Vector DB', 'Speech Recognition', 'Multi-Modal Systems'],
         videoUrl: '', // User will add later
         featured: true
     },
     {
         id: '3',
         title: 'AI Nutritional Health Assistant: Personalized Guidance for Indian Diets',
-        description: 'Built an AI-powered nutrition chatbot using FastAPI and LangChain with a RAG pipeline (FAISS) to deliver 90% accurate, personalized nutrition advice across 100+ context-aware queries and 4+ Indian regional cuisines.',
+        description: 'Built an AI-powered nutrition chatbot using FastAPI and LangGraph with a RAG pipeline (FAISS) to deliver 90% accurate, personalized nutrition advice across 100+ context-aware queries and 4+ Indian regional cuisines.',
         githubUrl: 'https://github.com/theankitdash/AI-Nutritional-Health-Assistant-Personalized-Guidance-for-Indian-Diets',
-        skills: ['FastAPI', 'LangGraph', 'RAG', 'FAISS', 'AI/ML'],
+        skills: ['FastAPI', 'LangGraph', 'RAG', 'FAISS', 'LLM'],
         videoUrl: '', // User will add later
         featured: true
     },
@@ -52,7 +52,7 @@ export const projects: Project[] = [
         title: 'Personal Finance System for Expense Tracking and Analysis',
         description: 'Engineered a containerized analytics engine with multivariate anomaly detection (LOF, OneClass SVM, deep autoencoder), forecasting, drift analysis, and semantic clustering via REST APIs, delivering results in ∼3s on 10,000+ transactions.',
         githubUrl: 'https://github.com/theankitdash/Personal-Finance-System-for-Expense-Tracking-and-Analysis',
-        skills: ['Personal Finance', 'Machine Learning Algorithms', 'Statistical Data Analysis', 'REST APIs', 'Docker'],
+        skills: ['PyTorch', 'Machine Learning Algorithms', 'Statistical Data Analysis', 'REST APIs', 'Docker'],
         videoUrl: '', // User will add later
         featured: true
     },
