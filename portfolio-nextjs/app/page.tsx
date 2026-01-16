@@ -13,8 +13,10 @@ export default function Home() {
                     <div className="hero-content fade-in-up">
                         <h1>ANKIT DASH</h1>
                         <p className="hero-subtitle">
-                            Tech Enthusiast crafting intelligent experiences with AI & Automation.<br />
-                            Transforming complex problems into elegant solutions.
+                            Tech Enthusiast <br /> 
+                            Xperimenting, Engineering the Future of Work <br />
+                            Craftiing Intelligent Experiences with AI & Automation.
+                            
                         </p>
                     </div>
                 </section>
