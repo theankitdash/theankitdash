@@ -316,6 +316,184 @@ h3 {
 }
 
 /* ===========================================
+   HAMBURGER MENU
+   =========================================== */
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+  position: relative;
+  border-radius: var(--radius-sm);
+  transition: background var(--transition-base);
+}
+
+.hamburger-menu:hover {
+  background: rgba(187, 134, 252, 0.1);
+}
+
+.hamburger-line {
+  width: 24px;
+  height: 2px;
+  background: var(--color-text-primary);
+  border-radius: 2px;
+  transition: all var(--transition-base);
+  position: absolute;
+}
+
+.hamburger-line:nth-child(1) {
+  transform: translateY(-7px);
+}
+
+.hamburger-line:nth-child(2) {
+  transform: translateY(0);
+}
+
+.hamburger-line:nth-child(3) {
+  transform: translateY(7px);
+}
+
+/* Hamburger to X animation */
+.hamburger-line.open:nth-child(1) {
+  transform: translateY(0) rotate(45deg);
+}
+
+.hamburger-line.open:nth-child(2) {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.hamburger-line.open:nth-child(3) {
+  transform: translateY(0) rotate(-45deg);
+}
+
+/* ===========================================
+   MOBILE MENU OVERLAY
+   =========================================== */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(10, 10, 10, 0.98);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition-slow);
+  z-index: 999;
+  padding-top: 80px;
+}
+
+.mobile-menu.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-menu-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+}
+
+.mobile-menu-links li {
+  width: 100%;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all var(--transition-base);
+}
+
+.mobile-menu.open .mobile-menu-links li {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Staggered animation for menu items */
+.mobile-menu.open .mobile-menu-links li:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.mobile-menu.open .mobile-menu-links li:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.mobile-menu.open .mobile-menu-links li:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.mobile-menu.open .mobile-menu-links li:nth-child(4) {
+  transition-delay: 0.4s;
+}
+
+.mobile-menu-links a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  transition: all var(--transition-base);
+  position: relative;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  z-index: 1;
+}
+
+.mobile-menu-links a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(187, 134, 252, 0.1) 0%, rgba(130, 169, 255, 0.1) 100%);
+  opacity: 0;
+  transition: opacity var(--transition-base);
+  border-radius: var(--radius-md);
+  z-index: -1;
+}
+
+.mobile-menu-links a:hover::before {
+  opacity: 1;
+}
+
+.mobile-menu-links a::after {
+  display: none !important;
+}
+
+.mobile-menu-links a:hover {
+  color: var(--color-primary);
+  transform: scale(1.05);
+}
+
+.mobile-menu-links a.active {
+  background: rgba(187, 134, 252, 0.2);
+  color: var(--color-secondary);
+}
+
+/* ===========================================
    HERO SECTION
    =========================================== */
 .hero {
@@ -1086,23 +1264,23 @@ a:hover::after {
 
 /* Tablets */
 @media (max-width: 768px) {
+
+  /* Hide desktop nav, show hamburger menu */
+  .nav-links-desktop {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
   .nav-container {
     padding: 1rem 1.5rem;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
 
   .nav-brand {
     font-size: 1.3rem;
-  }
-
-  .nav-links {
-    gap: 0.5rem;
-    flex-wrap: wrap;
-  }
-
-  .nav-links a {
-    font-size: 0.9rem;
-    padding: 0.5rem 0.875rem;
   }
 
   .main-content {
@@ -1172,9 +1350,10 @@ a:hover::after {
     gap: 1rem;
   }
 
+  /* Improved touch target size - meets accessibility standards */
   .social-link {
-    width: 45px;
-    height: 45px;
+    width: 48px;
+    height: 48px;
   }
 
   .container {
@@ -1248,9 +1427,10 @@ a:hover::after {
     font-size: 1rem;
   }
 
+  /* Even on very small screens, maintain minimum touch target */
   .social-link {
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
   }
 
   .skill-tag,
