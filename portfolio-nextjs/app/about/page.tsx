@@ -10,11 +10,10 @@ export default function AboutPage() {
         {
             id: 4,
             year: 'Accenture (2023 - Present)',
-            description: `As I stepped into my professional journey, I immersed myself in cutting-edge technologies. At Accenture, 
-        I gained hands-on experience with AI, automation, and AWS Cloud, while actively engaging in cloud events and 
-        industry tools. Generative AI, AI learning, and data analysis became my core focus areas, and I continued building 
-        my own AI projects to stay ahead of the latest advancements. This blend of professional and personal projects sharpened 
-        my problem-solving skills and expanded my expertise in scalable, intelligent solutions.`
+            description: `As I began my professional journey, I focused on building intelligent systems using machine learning and AI agents. 
+            At Accenture, My my work and interests converged around Generative AI, agent-based architectures, and data-driven decision systems.
+            Alongside my role, I actively built and experimented with AI agents and ML projects, strengthening my ability to design adaptive models, 
+            orchestrate intelligent workflows, and solve complex problems at scale.`
         },
         {
             id: 3,
