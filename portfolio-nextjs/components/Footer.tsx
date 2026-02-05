@@ -1,5 +1,3 @@
-import React from 'react'
-
 const SocialIcon = ({ name }: { name: string }) => {
     const icons: { [key: string]: JSX.Element } = {
         'LinkedIn': (
