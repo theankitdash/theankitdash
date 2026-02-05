@@ -11,21 +11,31 @@ export interface Project {
 
 export const projects: Project[] = [
     {
-        id: '1',
-        title: 'Multi Modal AGI',
-        description: 'Working on the MultiModal Assistant for Human like Experience!',
+        id: '6',
+        title: 'Home Data Server',
+        description: 'Cloud Data Systems that can be hosted in home to provide various services like Media Streaming, File Storage, Automation etc.',
         githubUrl: '',
-        skills: ['CrewAI', 'Automation', 'Raspberry Pi', 'IoT'],
+        skills: ['Ubuntu', 'Raspberry Pi', 'Data Engineering', 'Docker', 'Automation'],
         videoUrl: '', // User will add later
         featured: false,
         upcoming: true
     },
     {
-        id: '2',
+        id: '5',
+        title: 'Multi Modal AGI',
+        description: 'Working on the MultiModal Assistant for Human like Experience!',
+        githubUrl: '',
+        skills: ['Ubuntu', 'Raspberry Pi', 'IoT', 'Docker', 'Automation'],
+        videoUrl: '', // User will add later
+        featured: false,
+        upcoming: true
+    },
+    {
+        id: '4',
         title: 'Interactive Multimodal AI Buddy – An AI Companion for Real-Time, Emotion-Aware Conversations',
         description: 'Architected a live-streaming AI companion integrating speech, vision, LangChain memory, and vector DB, delivering personalized interactions with ~85% emotion recognition and ~3s latency and 50+ managed events.',
         githubUrl: 'https://github.com/theankitdash/Interactive-Multimodal-AI-Buddy-An-AI-Companion-for-Real-Time-Emotion-Aware-Conversations',
-        skills: ['Gemini', 'CrewAI', 'Vector DB', 'Speech Recognition', 'Multi-Modal Systems'],
+        skills: ['Gemini', 'CrewAI', 'LangGraph', 'Speech Recognition', 'Multi-Agent Systems'],
         videoUrl: '', // User will add later
         featured: true
     },
@@ -39,16 +49,7 @@ export const projects: Project[] = [
         featured: true
     },
     {
-        id: '4',
-        title: 'Personal Chatbot: Deva - AI Buddy Companion',
-        description: 'Developed an AI chatbot using Mistral-7B and Gradio with LangChain-ready architecture, enhanced with memory capabilities for supporting 1000+ conversations, emotion-aware responses, and personalized engagement.',
-        githubUrl: 'https://github.com/theankitdash/Personal-Chatbot-Deva-AI-Buddy-Companion',
-        skills: ['Mistral-7B', 'Gradio', 'LangChain', 'Python', 'AI/ML'],
-        videoUrl: '', // User will add later
-        featured: false
-    },
-    {
-        id: '5',
+        id: '2',
         title: 'Personal Finance System for Expense Tracking and Analysis',
         description: 'Engineered a containerized analytics engine with multivariate anomaly detection (LOF, OneClass SVM, deep autoencoder), forecasting, drift analysis, and semantic clustering via REST APIs, delivering results in ∼3s on 10,000+ transactions.',
         githubUrl: 'https://github.com/theankitdash/Personal-Finance-System-for-Expense-Tracking-and-Analysis',
@@ -57,7 +58,7 @@ export const projects: Project[] = [
         featured: true
     },
     {
-        id: '6',
+        id: '1',
         title: 'Administrator Controlled Timetable Based Automatic Facial Recognition Attendance System',
         description: 'Developed an ESP32-CAM-based facial recognition system with OpenCV for automated, timetable-linked attendance of 50+ students, achieving 85% accuracy and winning Best Presentation at SYMPOSIUM-2023.',
         githubUrl: 'https://github.com/theankitdash/Administrator-controlled-Timetable-based-Automatic-Facial-Recognition-Attendance-System',
