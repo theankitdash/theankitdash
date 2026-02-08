@@ -33,9 +33,9 @@ export const projects: Project[] = [
     {
         id: '4',
         title: 'Interactive Multimodal AI Buddy – An AI Companion for Real-Time, Emotion-Aware Conversations',
-        description: 'Architected a live-streaming AI companion integrating speech, vision, LangChain memory, and vector DB, delivering personalized interactions with ~85% emotion recognition and ~3s latency and 50+ managed events.',
+        description: 'Architected a emotion-aware AI companion with live voice and facial understanding, agentic reasoning pipelines, and persistent memory—delivered as a desktop application with ∼5s conversational latency.',
         githubUrl: 'https://github.com/theankitdash/Interactive-Multimodal-AI-Buddy-An-AI-Companion-for-Real-Time-Emotion-Aware-Conversations',
-        skills: ['Gemini', 'CrewAI', 'LangGraph', 'Speech Recognition', 'Multi-Agent Systems'],
+        skills: ['Gemini', 'LangGraph', 'Agent Reasoning', 'Speech Recognition', 'Multi-Agent Systems'],
         videoUrl: '', // User will add later
         featured: true
     },
