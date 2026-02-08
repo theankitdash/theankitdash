@@ -1,5 +1,5 @@
 # 💫 About Me:
-☕ Fueled by caffeine and coding since 2020.<br>🐍 Currently obsessed with AI and Automation.<br>🎯 Mission: Pushing boundaries in AI and automation to transform everyday experiences.<br>🔭 Exploring new technologies 💡, exciting places 🌍, and diverse cultures.<br>💬 Hit me up for chats on tech trends, regional movies, and Indian cinema 🎬.<br>🎲 Fun fact: I love recreating movie scenes — it’s my quirky little passion! 😄
+☕ Fueled by caffeine and coding since 2020.<br>🐍 Currently obsessed with AI and Automation.<br>🎯 Mission: Challenging my boundaries to upgrade everyday experiences.<br>🔭 Exploring new technologies 💡, exciting places 🌍, and diverse cultures.<br>💬 Hit me up for chats on tech trends, regional movies, and Indian cinema 🎬.<br>🎲 Fun fact: I love recreating movie scenes — it’s my quirky little passion! 😄
 
 
 ## 🌐 Socials:
