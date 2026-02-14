@@ -96,6 +96,18 @@ body::before {
   text-align: center;
 }
 
+.mb-3 {
+  margin-bottom: var(--space-sm);
+}
+
+.mb-4 {
+  margin-bottom: var(--space-md);
+}
+
+.mb-5 {
+  margin-bottom: var(--space-xl);
+}
+
 /* ===========================================
    TYPOGRAPHY
    =========================================== */
@@ -1185,16 +1197,16 @@ a:hover::after {
 }
 
 /* ===========================================
-   INSTAGRAM VIDEO GRID
+   PULSE CUTS GRID
    =========================================== */
-.instagram-grid {
+.pulse-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   margin: 3rem 0;
 }
 
-.instagram-video {
+.pulse-video {
   aspect-ratio: 9/16;
   border-radius: var(--radius-lg);
   overflow: hidden;
@@ -1202,7 +1214,7 @@ a:hover::after {
   border: 1px solid rgba(187, 134, 252, 0.15);
 }
 
-.instagram-video iframe {
+.pulse-video iframe {
   width: 100%;
   height: 100%;
   border: none;
@@ -1437,5 +1449,212 @@ a:hover::after {
   .bento-skill-tag {
     font-size: 0.7rem;
     padding: 0.3rem 0.65rem;
+  }
+}
+
+/* ===========================================
+   VFX GRID
+   =========================================== */
+.vfx-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  width: 100%;
+}
+
+.vfx-item-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #1a1a1a;
+  aspect-ratio: 16/9;
+}
+
+.vfx-item-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 255, 255, 0.2);
+}
+
+.vfx-media-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.vfx-media {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.vfx-item-card:hover .vfx-media {
+  transform: scale(1.05);
+}
+
+.vfx-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+  padding: 1.5rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+}
+
+.vfx-item-card:hover .vfx-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.vfx-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.vfx-desc {
+  font-size: 0.9rem;
+  color: #ddd;
+  line-height: 1.4;
+}
+
+/* ===========================================
+   CREATIVE SHOWCASE (Main Page)
+   =========================================== */
+.creative-showcase-container {
+  padding: 2rem 0;
+  overflow: hidden;
+}
+
+.creative-strip {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+  perspective: 1000px;
+}
+
+.creative-card {
+  position: relative;
+  width: 280px;
+  height: 180px;
+  border-radius: 12px;
+  background: #222;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transform-style: preserve-3d;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Slight tilt for non-hovered items */
+.creative-card:nth-child(1) {
+  transform: rotateY(15deg) scale(0.9);
+  z-index: 1;
+}
+
+.creative-card:nth-child(2) {
+  transform: rotateY(0deg) scale(1);
+  z-index: 2;
+}
+
+.creative-card:nth-child(3) {
+  transform: rotateY(-15deg) scale(0.9);
+  z-index: 1;
+}
+
+.creative-card:hover {
+  transform: rotateY(0deg) scale(1.1) translateY(-10px);
+  z-index: 10;
+  box-shadow: 0 20px 40px rgba(0, 255, 255, 0.3);
+  border: 1px solid rgba(0, 255, 255, 0.5);
+}
+
+.creative-image-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.creative-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.creative-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.creative-card:hover .creative-info {
+  opacity: 1;
+}
+
+.creative-cta {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.creative-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.creative-link:hover {
+  border-color: #fff;
+  transform: translateY(-2px);
+}
+
+.creative-link::after {
+  display: none !important;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.creative-link:hover .arrow {
+  transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+  .creative-strip {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .creative-card:nth-child(1),
+  .creative-card:nth-child(2),
+  .creative-card:nth-child(3) {
+    transform: none;
+    width: 100%;
+    max-width: 350px;
+    height: 200px;
+  }
+
+  .creative-card:hover {
+    transform: scale(1.05);
   }
 }

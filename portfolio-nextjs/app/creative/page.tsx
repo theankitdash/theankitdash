@@ -1,26 +1,10 @@
 'use client'
 
-import { useState } from 'react'
+import VFXGrid from '@/components/VFXGrid'
+import { vfxItems } from '@/data/vfx'
+import { pulseCuts } from '@/data/cuts'
 
 export default function CreativePage() {
-
-    const [instagramVideos] = useState([
-        {
-            id: 1,
-            embedUrl: 'https://www.instagram.com/reel/DSfnq1-E76R/embed',
-            placeholder: 'Instagram Video 1 - Paste embed URL in instagramVideos array'
-        },
-        {
-            id: 2,
-            embedUrl: 'https://www.instagram.com/reel/DAOK0f1srXv/embed',
-            placeholder: 'Instagram Video 2 - Paste embed URL in instagramVideos array'
-        },
-        {
-            id: 3,
-            embedUrl: 'https://www.instagram.com/reel/DSxbsDHkTbO/embed',
-            placeholder: 'Instagram Video 3 - Paste embed URL in instagramVideos array'
-        }
-    ]);
 
     return (
         <main className="main-content">
@@ -30,37 +14,50 @@ export default function CreativePage() {
                     Check out my latest creative content.
                 </p>
 
-                <div className="instagram-grid">
-                    {instagramVideos.map((video) => (
-                        <div key={video.id} className="instagram-video">
-                            {video.embedUrl ? (
-                                <iframe
-                                    src={video.embedUrl}
-                                    allowFullScreen
-                                    title={`Instagram Video ${video.id}`}
-                                />
-                            ) : (
-                                <div style={{
-                                    width: '100%',
-                                    height: '100%',
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
-                                    padding: '2rem',
-                                    textAlign: 'center',
-                                    color: '#888'
-                                }}>
-                                    <div>
-                                        <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>📸</div>
-                                        <p>{video.placeholder}</p>
-                                        <p style={{ fontSize: '0.9rem', marginTop: '1rem', color: '#666' }}>
-                                            To add: Go to Instagram → Select Reel → Click &quot;...&quot; → &quot;Embed&quot; → Copy embed code
-                                        </p>
-                                    </div>
+                {/* Unified Creative Section */}
+                <div className="creative-content-wrapper">
+                    {/* VFX Section */}
+                    <section className="mb-5">
+                        <h2 className="section-title mb-4">VFX Works</h2>
+                        <VFXGrid items={vfxItems} />
+                    </section>
+
+                    {/* Pulse Cuts Section */}
+                    <section className="mb-5">
+                        <h2 className="section-title mb-4">Pulse Cuts</h2>
+                        <div className="pulse-grid">
+                            {pulseCuts.map((video) => (
+                                <div key={video.id} className="pulse-video">
+                                    {video.embedUrl ? (
+                                        <iframe
+                                            src={video.embedUrl}
+                                            allowFullScreen
+                                            title={`Pulse Cut ${video.id}`}
+                                        />
+                                    ) : (
+                                        <div style={{
+                                            width: '100%',
+                                            height: '100%',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                            padding: '2rem',
+                                            textAlign: 'center',
+                                            color: '#888'
+                                        }}>
+                                            <div>
+                                                <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>🎥</div>
+                                                <p>{video.placeholder}</p>
+                                                <p style={{ fontSize: '0.9rem', marginTop: '1rem', color: '#666' }}>
+                                                    To add: Go to Instagram → Select Reel → Click &quot;...&quot; → &quot;Embed&quot; → Copy embed code
+                                                </p>
+                                            </div>
+                                        </div>
+                                    )}
                                 </div>
-                            )}
+                            ))}
                         </div>
-                    ))}
+                    </section>
                 </div>
             </div>
         </main>

@@ -1,6 +1,8 @@
 import BentoGrid from '@/components/BentoGrid'
 import ScrollReveal from '@/components/ScrollReveal'
 import { getFeaturedProjects } from '@/data/projects'
+import CreativeShowcase from '@/components/CreativeShowcase'
+import { getFeaturedVFX } from '@/data/vfx'
 
 export default function Home() {
     const featuredProjects = getFeaturedProjects();
@@ -15,7 +17,7 @@ export default function Home() {
                         <p className="hero-subtitle">
                             Tech Enthusiast <br /> 
                             Xperimenting, Engineering the Future of Work <br />
-                            Craftiing Intelligent Experiences with AI & Automation.
+                            Crafting Intelligent Experiences with AI & Automation.
                             
                         </p>
                     </div>
@@ -38,6 +40,14 @@ export default function Home() {
                     <section className="mt-4">
                         <h2 className="text-center mb-4">Featured Projects</h2>
                         <BentoGrid projects={featuredProjects} />
+                    </section>
+                </ScrollReveal>
+
+                {/* Creative Showcase Section */}
+                <ScrollReveal delay={150}>
+                    <section className="mt-5">
+                        <h2 className="text-center mb-4">Creative Visuals</h2>
+                        <CreativeShowcase items={getFeaturedVFX()} />
                     </section>
                 </ScrollReveal>
 
