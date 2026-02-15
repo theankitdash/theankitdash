@@ -7,33 +7,18 @@ interface BentoGridProps {
 }
 
 export default function BentoGrid({ projects }: BentoGridProps) {
-    const getItemClass = (index: number, totalProjects: number) => {
-        // For 3 projects: First large (full width), then two medium side by side
-        if (totalProjects === 3) {
-            if (index === 0) return 'bento-large'
-            return 'bento-medium'
-        }
-
-        // For 4+ projects: larger variety
-        if (index === 0 || index === 3) return 'bento-large'
-        if (index === 1 || index === 4) return 'bento-medium'
-        return 'bento-small'
-    }
-
     return (
-        <div className="bento-grid">
-            {projects.map((project, index) => {
-                const itemClass = getItemClass(index, projects.length)
-
-                return (
-                    <div
-                        key={project.id}
-                        className={`bento-item ${itemClass}`}
-                        style={{ animationDelay: `${index * 0.1}s` }}
-                    >
-                        <div className="bento-content">
-                            <div className="bento-header">
-                                <h3 className="bento-title">
+        <div className="project-cards">
+            {projects.map((project, index) => (
+                <div
+                    key={project.id}
+                    className="project-card-stacked"
+                    style={{ animationDelay: `${index * 0.15}s` }}
+                >
+                    <div className="project-card-inner">
+                        <div className="project-card-top">
+                            <div className="project-card-title-row">
+                                <h3 className="project-card-title">
                                     {project.githubUrl ? (
                                         <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                                             {project.title}
@@ -47,25 +32,39 @@ export default function BentoGrid({ projects }: BentoGridProps) {
                                 )}
                             </div>
 
-                            <p className="bento-description">
+                            <p className="project-card-desc">
                                 {project.description}
                             </p>
+                        </div>
 
-                            <div className="bento-skills">
+                        <div className="project-card-bottom">
+                            <div className="project-card-skills">
                                 {project.skills.map((skill, idx) => (
-                                    <span key={idx} className="bento-skill-tag">
+                                    <span key={idx} className="project-card-skill">
                                         {skill}
                                     </span>
                                 ))}
                             </div>
-                        </div>
 
-                        {/* Decorative elements */}
-                        <div className="bento-glow"></div>
-                        <div className="bento-gradient"></div>
+                            {project.githubUrl && (
+                                <a
+                                    href={project.githubUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="project-card-link"
+                                >
+                                    View on GitHub
+                                    <span className="arrow">→</span>
+                                </a>
+                            )}
+                        </div>
                     </div>
-                )
-            })}
+
+                    {/* Decorative glow */}
+                    <div className="project-card-glow"></div>
+                </div>
+            ))}
         </div>
     )
 }
+

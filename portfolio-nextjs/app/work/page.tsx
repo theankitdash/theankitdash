@@ -18,14 +18,29 @@ export default function WorkPage() {
                     <h1 className="text-center mb-3">My Work</h1>
                     <p className="text-center" style={{ fontSize: '1.2rem', color: '#B0B0B0', maxWidth: '700px', margin: '0 auto 3rem' }}>
                         Building Smart Automations with AI, Data & Workflow Intelligence.<br />
-                        Hover over projects to see demos (coming soon).
                     </p>
+                </ScrollReveal>
+
+                {/* Completed Projects Section */}
+                <ScrollReveal delay={100}>
+                    <section className="mb-4">
+                        <h2 className="text-center mb-4" style={{ fontSize: '2rem', color: '#BB86FC' }}>My Projects</h2>
+                        <div className="project-grid">
+                            {completedProjects.map((project) => (
+                                <ProjectCard
+                                    key={project.id}
+                                    project={project}
+                                    showVideo={true}
+                                />
+                            ))}
+                        </div>
+                    </section>
                 </ScrollReveal>
 
                 {/* Upcoming Projects Section */}
                 {upcomingProjects.length > 0 && (
-                    <ScrollReveal delay={100}>
-                        <section className="mb-4">
+                    <ScrollReveal delay={200}>
+                        <section>
                             <h2 className="text-center mb-4" style={{ fontSize: '2rem', color: '#BB86FC' }}>Upcoming Projects</h2>
                             <div className="project-grid">
                                 {upcomingProjects.map((project) => (
@@ -39,22 +54,6 @@ export default function WorkPage() {
                         </section>
                     </ScrollReveal>
                 )}
-
-                {/* Completed Projects Section */}
-                <ScrollReveal delay={200}>
-                    <section>
-                        <h2 className="text-center mb-4" style={{ fontSize: '2rem', color: '#BB86FC' }}>My Projects</h2>
-                        <div className="project-grid">
-                            {completedProjects.map((project) => (
-                                <ProjectCard
-                                    key={project.id}
-                                    project={project}
-                                    showVideo={true}
-                                />
-                            ))}
-                        </div>
-                    </section>
-                </ScrollReveal>
             </div>
         </main>
     )
