@@ -14,6 +14,13 @@ export const vfxItems: VFXItem[] = [
         description: "A detailed 3D render animation of an airplane in flight.",
         type: 'video',
         url: "/vfx/Airplane0001-0240.mp4",
+    },
+    {
+        id: 2,
+        title: "Temple Drone",
+        description: "A cinematic drone shot of a temple.",
+        type: 'video',
+        url: "/vfx/Temple Drone.mp4",
     }
 ];
 
