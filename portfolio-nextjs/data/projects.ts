@@ -33,7 +33,7 @@ export const projects: Project[] = [
     {
         id: '4',
         title: 'Interactive Multimodal AI Buddy – An AI Companion for Real-Time, Emotion-Aware Conversations',
-        description: 'Architected a emotion-aware AI companion with live voice and facial understanding, agentic reasoning pipelines, and persistent memory—delivered as a desktop application with ∼5s conversational latency.',
+        description: 'Architected a real-time multimodal AI companion integrating speech recognition, facial emotion detection, and LLM based agentic reasoning with persistent memory, delivered as a desktop application enabling context-aware conversations with ∼5s latency.',
         githubUrl: 'https://github.com/theankitdash/Interactive-Multimodal-AI-Buddy-An-AI-Companion-for-Real-Time-Emotion-Aware-Conversations',
         skills: ['Gemini', 'LangGraph', 'Agent Reasoning', 'Speech Recognition', 'Multi-Agent Systems'],
         videoUrl: '', // User will add later
@@ -42,7 +42,7 @@ export const projects: Project[] = [
     {
         id: '3',
         title: 'AI Nutritional Health Assistant: Personalized Guidance for Indian Diets',
-        description: 'Built an AI-powered nutrition chatbot using FastAPI and LangGraph with a RAG pipeline (FAISS) to deliver 90% accurate, personalized nutrition advice across 100+ context-aware queries and 4+ Indian regional cuisines.',
+        description: 'Developed a FastAPI + LangGraph powered LLM nutrition assistant using a FAISS-based RAG pipeline for semantic retrieval and grounded responses, delivering 90% accurate personalized dietary recommendations across 100+ health queries and multiple Indian cuisines.',
         githubUrl: 'https://github.com/theankitdash/AI-Nutritional-Health-Assistant-Personalized-Guidance-for-Indian-Diets',
         skills: ['FastAPI', 'LangGraph', 'RAG', 'FAISS', 'LLM'],
         videoUrl: '', // User will add later
@@ -51,7 +51,7 @@ export const projects: Project[] = [
     {
         id: '2',
         title: 'Personal Finance System for Expense Tracking and Analysis',
-        description: 'Engineered a containerized analytics engine with multivariate anomaly detection (LOF, OneClass SVM, deep autoencoder), forecasting, drift analysis, and semantic clustering via REST APIs, delivering results in ∼3s on 10,000+ transactions.',
+        description: 'Engineered a containerized ML analytics platform with multivariate anomaly detection (LOF, One-Class SVM, deep autoencoder), forecasting, drift analysis, and semantic clustering via REST APIs, processing 10,000+ financial transactions in ∼3s.',
         githubUrl: 'https://github.com/theankitdash/Personal-Finance-System-for-Expense-Tracking-and-Analysis',
         skills: ['PyTorch', 'Machine Learning Algorithms', 'Statistical Data Analysis', 'REST APIs', 'Docker'],
         videoUrl: '', // User will add later
