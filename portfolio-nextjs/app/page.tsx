@@ -28,7 +28,7 @@ export default function Home() {
                     <section className="quote-section">
                         <blockquote className="belief-quote">
                             <p>
-                                My craft is building useful experiences for real people—keeping ego out,
+                                My craft is building useful experiences for real people - keeping ego out,
                                 function first, and creativity free to do its job.
                             </p>
                         </blockquote>
