@@ -42,7 +42,7 @@ export const projects: Project[] = [
     {
         id: '3',
         title: 'AI Nutritional Health Assistant: Personalized Guidance for Indian Diets',
-        description: 'Developed a FastAPI + LangGraph powered LLM nutrition assistant using a FAISS-based RAG pipeline for semantic retrieval and grounded responses, delivering 90% accurate personalized dietary recommendations across 100+ health queries and multiple Indian cuisines.',
+        description: 'Designed and deployed a scalable LLM-powered nutrition assistant using FastAPI and LangGraph, integrating hybrid search (BM25 + FAISS), cross-encoder re-ranking, and agentic tool calling to achieve 90%+ accuracy in personalized dietary recommendations across 100+ real-world health scenarios.',
         githubUrl: 'https://github.com/theankitdash/AI-Nutritional-Health-Assistant-Personalized-Guidance-for-Indian-Diets',
         skills: ['FastAPI', 'LangGraph', 'RAG', 'FAISS', 'LLM'],
         videoUrl: '', // User will add later
