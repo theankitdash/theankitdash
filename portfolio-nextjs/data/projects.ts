@@ -33,7 +33,7 @@ export const projects: Project[] = [
     {
         id: '4',
         title: 'Interactive Multimodal AI Buddy – An AI Companion for Real-Time, Emotion-Aware Conversations',
-        description: 'Architected a real-time multimodal AI companion integrating speech recognition, facial emotion detection, and LLM based agentic reasoning with persistent memory, delivered as a desktop application enabling context-aware conversations with ∼5s latency.',
+        description: ' Architected an emotion-aware AI companion (Electron + FastAPI) with a dual-WebSocket pipeline bridging Gemini Live API audio streaming and a LangGraph reasoning pipeline (Mistral 7B), FaceNet-PyTorch facial auth, Gemini 2.5 Flash vision analysis, and pgvector semantic memory- at ∼5s conversational latency.',
         githubUrl: 'https://github.com/theankitdash/Interactive-Multimodal-AI-Buddy-An-AI-Companion-for-Real-Time-Emotion-Aware-Conversations',
         skills: ['Gemini', 'LangGraph', 'Agent Reasoning', 'Speech Recognition', 'Multi-Agent Systems'],
         videoUrl: '', // User will add later
@@ -42,7 +42,7 @@ export const projects: Project[] = [
     {
         id: '3',
         title: 'AI Nutritional Health Assistant: Personalized Guidance for Indian Diets',
-        description: 'Designed and deployed a scalable LLM-powered nutrition assistant using FastAPI and LangGraph, integrating hybrid search (BM25 + FAISS), cross-encoder re-ranking, and agentic tool calling to achieve 90%+ accuracy in personalized dietary recommendations across 100+ real-world health scenarios.',
+        description: 'Designed an agentic nutrition assistant (FastAPI + Next.js, LangGraph) with two-stage hybrid retrieval (BM25 + FAISS→RRF→cross-encoder re-ranking), 25+ health metric computations, and Gemma-3-27b via NVIDIA NIM- achieving 90% accuracy vs ∼62% naive search across 100+ real-world health scenarios.',
         githubUrl: 'https://github.com/theankitdash/AI-Nutritional-Health-Assistant-Personalized-Guidance-for-Indian-Diets',
         skills: ['FastAPI', 'LangGraph', 'RAG', 'FAISS', 'LLM'],
         videoUrl: '', // User will add later
@@ -51,7 +51,7 @@ export const projects: Project[] = [
     {
         id: '2',
         title: 'Personal Finance System for Expense Tracking and Analysis',
-        description: 'Engineered a containerized ML analytics platform with multivariate anomaly detection (LOF, One-Class SVM, deep autoencoder), forecasting, drift analysis, and semantic clustering via REST APIs, processing 10,000+ financial transactions in ∼3s.',
+        description: ' Engineered a containerized ML platform (FastAPI + Node.js, Docker Compose) with multivariate anomaly detection (LOF, One-Class SVM, PyTorch autoencoder), category-level forecasting (XGBoost/RF/GBM), Jensen Shannon drift detection, and sentence-transformer semantic clustering via REST APIs- processing 10,000+ transactions in ∼3s.',
         githubUrl: 'https://github.com/theankitdash/Personal-Finance-System-for-Expense-Tracking-and-Analysis',
         skills: ['PyTorch', 'Machine Learning Algorithms', 'Statistical Data Analysis', 'REST APIs', 'Docker'],
         videoUrl: '', // User will add later
