@@ -35,7 +35,7 @@ export const projects: Project[] = [
         title: 'Interactive Multimodal AI Buddy – An AI Companion for Real-Time, Emotion-Aware Conversations',
         description: ' Architected an emotion-aware AI companion (Electron + FastAPI) with a dual-WebSocket pipeline bridging Gemini 2.5 flash audio streaming, a LangGraph reasoning pipeline (LoRA + DPO fine-tuned Mistral 7B), FaceNet-PyTorch facial auth, and pgvector semantic memory at ∼5s conversational latency.',
         githubUrl: 'https://github.com/theankitdash/Interactive-Multimodal-AI-Buddy-An-AI-Companion-for-Real-Time-Emotion-Aware-Conversations',
-        skills: ['Multi-Agent Systems', 'Vision Analysis', 'Agent Reasoning', 'LoRA Fine-Tuning', 'Reinforcement Learning from Human Feedback'],
+        skills: ['Multi-Agent Systems', 'Vision Analysis', 'Agent Reasoning', 'LoRA Fine-Tuning', 'Reinforcement Learning'],
         videoUrl: '', // User will add later
         featured: true
     },
