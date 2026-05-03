@@ -42,7 +42,7 @@ export const projects: Project[] = [
     {
         id: '3',
         title: 'AI Nutritional Health Assistant: Personalized Guidance for Indian Diets',
-        description: 'Designed an agentic nutrition assistant (FastAPI + Next.js, LangGraph) with two-stage hybrid retrieval (BM25 + FAISS→RRF→cross-encoder re-ranking), 25+ health metric computations, and Gemma-3-27b via NVIDIA NIM- achieving 90% accuracy vs ∼62% naive search across 100+ real-world health scenarios.',
+        description: 'Designed an agentic nutrition assistant (FastAPI + Next.js, LangGraph) with two-stage hybrid retrieval (BM25 + FAISS→RRF→cross-encoder re-ranking), 25+ health metric computations, and Gemma-4 via NVIDIA NIM- achieving 90% accuracy vs ∼62% naive search across 100+ real-world health scenarios.',
         githubUrl: 'https://github.com/theankitdash/AI-Nutritional-Health-Assistant-Personalized-Guidance-for-Indian-Diets',
         skills: ['FastAPI', 'LangGraph', 'Hybrid RAG', 'FAISS', 'LLM'],
         videoUrl: '', // User will add later
