@@ -12,7 +12,7 @@ export const pulseCuts: PulseCut[] = [
     },
     {
         id: 2,
-        embedUrl: 'https://www.instagram.com/reel/DTDkfxijNaM/embed',
+        embedUrl: 'https://www.instagram.com/reel/DZxqnxhTMyi/embed',
         placeholder: 'Pulse Cut 2 - Paste embed URL in pulseCuts array'
     },
     {
