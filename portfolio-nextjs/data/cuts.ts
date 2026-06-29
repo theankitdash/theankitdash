@@ -7,7 +7,7 @@ export interface PulseCut {
 export const pulseCuts: PulseCut[] = [
     {
         id: 1,
-        embedUrl: 'https://www.instagram.com/reel/DUtOSTCE5Dt/embed',
+        embedUrl: 'https://www.instagram.com/reel/DZ79_LqzSNj/embed',
         placeholder: 'Pulse Cut 1 - Paste embed URL in pulseCuts array'
     },
     {
