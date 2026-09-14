@@ -1,22 +1,26 @@
 # Ankit Dash - Portfolio Website
 
-A modern, premium portfolio website built with Next.js 15, TypeScript, and custom CSS. Showcasing AI/ML projects and creative work.
+A modern, premium portfolio website built with Next.js 16, TypeScript, and custom CSS. Deployed on Cloudflare Pages via OpenNext. Showcasing AI/ML projects, VFX work, and creative content.
 
 ## 🚀 Features
 
-- **Premium Dark Theme**: Glassmorphism effects with smooth animations
-- **Three Main Pages**:
-  - **Home**: Personal bio + 3 featured projects
-  - **Work**: Complete project showcase with video demos on hover
-  - **Creative**: Instagram video integration
+- **Premium Dark Theme**: Glassmorphism effects, animated background particles, and smooth scroll-reveal animations
+- **Four Main Pages**:
+  - **Home**: Hero section, belief quote, featured projects (BentoGrid), and creative showcase
+  - **Work**: Complete project showcase split into Completed and Upcoming projects
+  - **Creative**: VFX video grid + Instagram Pulse Cuts embeds
+  - **About**: Personal timeline / journey
+- **Animated Background**: Floating particle system across all pages
+- **Scroll Reveal Animations**: Elements animate in as you scroll
+- **Tilt Card Effects**: Interactive 3D hover tilt on cards
 - **Fully Responsive**: Optimized for mobile, tablet, and desktop
-- **SEO Optimized**: Proper metadata and semantic HTML
+- **SEO Optimized**: Sitemap, robots.txt, Open Graph, Twitter Cards, and semantic HTML
 - **TypeScript**: Type-safe code throughout
 
 ## 📋 Prerequisites
 
 - Node.js 22+ installed
-- npm or yarn package manager
+- npm package manager
 
 ## 🛠️ Installation
 
@@ -39,39 +43,54 @@ npm run dev
 
 ## 📝 Adding Your Content
 
-### Adding Project Videos
+### Adding / Editing Projects
 
-Edit `data/projects.ts` and add video URLs to the `videoUrl` field:
+Edit `data/projects.ts` to manage your projects. Each project has:
 
 ```typescript
 {
   id: '1',
-  title: 'Your Project',
-  // ... other fields
-  videoUrl: 'https://your-video-url.mp4', // Add your video URL here
+  title: 'Project Name',
+  description: 'Project description...',
+  githubUrl: 'https://github.com/...',
+  skills: ['Skill1', 'Skill2'],
+  videoUrl: 'https://your-video-url.mp4',  // Optional demo video
+  featured: true,   // Show on Home page
+  upcoming: true,   // Mark as upcoming (shown in separate section on Work page)
 }
 ```
 
-### Adding Instagram Videos
+### Adding VFX Content
 
-Edit `app/creative/page.tsx` and add Instagram embed URLs:
+Edit `data/vfx.ts` to add VFX videos/images. Place media files in `public/vfx/`:
 
 ```typescript
-const [instagramVideos] = useState([
-  {
-    id: 1,
-    embedUrl: 'https://www.instagram.com/reel/YOUR_REEL_ID/embed',
-    placeholder: 'Instagram Video 1'
-  },
-  // ... add more videos
-]);
+{
+  id: 1,
+  title: 'Render Title',
+  description: 'Description of the VFX work',
+  type: 'video',              // 'video' or 'image'
+  url: '/vfx/your-file.mp4',  // Path relative to public/
+}
+```
+
+### Adding Pulse Cuts (Instagram Reels)
+
+Edit `data/cuts.ts` to add Instagram reel embeds:
+
+```typescript
+{
+  id: 1,
+  embedUrl: 'https://www.instagram.com/reel/YOUR_REEL_ID/embed',
+  placeholder: 'Pulse Cut 1'
+}
 ```
 
 **How to get Instagram embed URL:**
-1. Go to your Instagram post/reel
+1. Go to your Instagram reel
 2. Click the three dots (...)
 3. Click "Embed"
-4. Copy the embed code and extract the URL from the `src` attribute
+4. Copy the URL from the `src` attribute of the embed code
 
 ## 🎨 Customization
 
@@ -90,12 +109,9 @@ Edit `components/Footer.tsx` to update social media links.
 
 Edit `data/projects.ts` to add/remove/modify projects.
 
-## 📦 Build for Production
+### VFX & Creative Content
 
-```bash
-npm run build
-npm start
-```
+Edit `data/vfx.ts` and `data/cuts.ts` to manage creative content.
 
 ## 🌐 Deployment
 
@@ -109,38 +125,62 @@ npm run pages:build
 
 Deployment is handled automatically via GitHub integration with Cloudflare Pages.
 
+### Build for local production preview:
+
+```bash
+npm run build
+npm start
+```
+
 ## 📁 Project Structure
 
 ```
 portfolio-nextjs/
 ├── app/
-│   ├── layout.tsx          # Root layout with navigation
-│   ├── page.tsx            # Home page
-│   ├── globals.css         # Global styles
+│   ├── layout.tsx              # Root layout with nav, footer, animated bg
+│   ├── page.tsx                # Home page
+│   ├── globals.css             # Global styles (38KB+)
+│   ├── icon.png                # Favicon
+│   ├── sitemap.ts              # Dynamic sitemap generation
+│   ├── about/
+│   │   └── page.tsx            # About / Timeline page
 │   ├── work/
-│   │   └── page.tsx        # Work page
+│   │   └── page.tsx            # Work page (completed + upcoming)
 │   └── creative/
-│       └── page.tsx        # Creative page
+│       └── page.tsx            # Creative page (VFX + Pulse Cuts)
 ├── components/
-│   ├── Navigation.tsx      # Navigation component
-│   ├── Footer.tsx          # Footer component
-│   └── ProjectCard.tsx     # Project card component
+│   ├── AnimatedBackground.tsx  # Floating particle background
+│   ├── BentoGrid.tsx           # Bento-style project grid (Home)
+│   ├── CreativeShowcase.tsx    # Creative content preview (Home)
+│   ├── Footer.tsx              # Footer with social links
+│   ├── HamburgerMenu.tsx       # Mobile hamburger menu
+│   ├── Navigation.tsx          # Top navigation bar
+│   ├── ProjectCard.tsx         # Project card with video hover
+│   ├── ScrollReveal.tsx        # Scroll-triggered reveal animation
+│   ├── TiltCard.tsx            # 3D tilt effect card wrapper
+│   └── VFXGrid.tsx             # VFX video/image grid
 ├── data/
-│   └── projects.ts         # Project data
-├── public/                 # Static files
+│   ├── projects.ts             # Project data + query helpers
+│   ├── vfx.ts                  # VFX items data
+│   └── cuts.ts                 # Pulse Cuts (Instagram reels) data
+├── public/
+│   ├── robots.txt              # Search engine crawl rules
+│   └── vfx/                    # VFX media assets
 ├── package.json
 ├── tsconfig.json
 ├── next.config.js
-├── wrangler.toml           # Cloudflare Workers config
-└── open-next.config.ts     # OpenNext Cloudflare adapter config
+├── wrangler.toml               # Cloudflare Workers config
+└── open-next.config.ts         # OpenNext Cloudflare adapter config
 ```
 
 ## 🎯 Key Technologies
 
-- **Next.js 15**: React framework with App Router
+- **Next.js 16**: React framework with App Router
 - **TypeScript**: Type safety
-- **Custom CSS**: Premium dark theme with animations
+- **Custom CSS**: Premium dark theme with glassmorphism and animations
 - **React 18**: Latest React features
+- **OpenNext**: Cloudflare Pages adapter for Next.js
+- **Wrangler**: Cloudflare Workers CLI
 
 ## 📄 License
 
