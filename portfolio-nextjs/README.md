@@ -99,18 +99,15 @@ npm start
 
 ## 🌐 Deployment
 
-This project can be deployed to:
-- **Vercel** (recommended for Next.js)
-- **Netlify**
-- **AWS Amplify**
-- Any platform supporting Next.js
+This project is deployed to **Cloudflare Pages** via [OpenNext](https://opennext.js.org/cloudflare).
 
-### Deploy to Vercel:
+### Build for Cloudflare Pages:
 
 ```bash
-npm install -g vercel
-vercel
+npm run pages:build
 ```
+
+Deployment is handled automatically via GitHub integration with Cloudflare Pages.
 
 ## 📁 Project Structure
 
@@ -133,7 +130,9 @@ portfolio-nextjs/
 ├── public/                 # Static files
 ├── package.json
 ├── tsconfig.json
-└── next.config.js
+├── next.config.js
+├── wrangler.toml           # Cloudflare Workers config
+└── open-next.config.ts     # OpenNext Cloudflare adapter config
 ```
 
 ## 🎯 Key Technologies
