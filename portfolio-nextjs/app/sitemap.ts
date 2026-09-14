@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://theankitdash.netlify.app'
+    const baseUrl = 'https://portfolio.theankitdash.workers.dev/'
 
     return [
         {

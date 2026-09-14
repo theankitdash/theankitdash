@@ -8,13 +8,13 @@ import AnimatedBackground from '@/components/AnimatedBackground'
 export const metadata: Metadata = {
     title: 'Ankit Dash - Portfolio',
     description: 'Tech Enthusiast crafting intelligent experiences with AI & Automation',
-    keywords: ['Ankit Dash', 'AI Engineer', 'Automation Expert', 'Tech Enthusiast', 'Machine Learning', 'Python Developer', 'Next.js', 'n8n Workflows', 'Data Science', 'AI Automation', 'Web Development', 'React', 'TypeScript', 'Portfolio'],
+    keywords: ['Ankit Dash', 'AI Engineer', 'Automation Expert', 'Tech Enthusiast', 'Machine Learning', 'Python Developer', 'Next.js', 'Data Engineer', 'Data Science', 'AI Automation', 'Web Development', 'React', 'TypeScript', 'Portfolio'],
     authors: [{ name: 'Ankit Dash' }],
     creator: 'Ankit Dash',
     openGraph: {
         type: 'website',
         locale: 'en_US',
-        url: 'https://theankitdash.netlify.app',
+        url: 'https://portfolio.theankitdash.workers.dev/',
         title: 'Ankit Dash - AI/ML Engineer & Tech Enthusiast',
         description: 'Tech Enthusiast crafting intelligent experiences with AI & Automation',
         siteName: 'Ankit Dash Portfolio',

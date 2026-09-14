@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://theankitdash.netlify.app/sitemap.xml
+Sitemap: https://portfolio.theankitdash.workers.dev/sitemap.xml
