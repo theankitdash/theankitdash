@@ -10,10 +10,10 @@ export default function AboutPage() {
         {
             id: 4,
             year: 'Accenture (2023 - Present)',
-            description: `As I began my professional journey, I focused on building intelligent systems using ML and AI agents. 
-            At Accenture, My work and interests converged around Generative AI, agent-based architectures, and data-driven decision systems.
+            description: `As I began my professional journey, I focused on building intelligent, data-driven systems.
+            At Accenture, My work and interests converged around Generative AI, cloud-based ETL/ELT data pipelines, and agent-based architectures.
             Alongside my role, I actively built and experimented with AI agents and ML projects, strengthening my ability to design adaptive models, 
-            orchestrate intelligent workflows, and solve complex problems at scale.`
+            orchestrate intelligent data workflows, and solve complex problems at scale.`
         },
         {
             id: 3,
