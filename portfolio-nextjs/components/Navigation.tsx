@@ -45,7 +45,7 @@ export default function Navigation() {
         <nav className="nav" aria-label="Main navigation">
             <div className="nav-container">
                 <a
-                    href="https://drive.google.com/file/d/1fHeXnxSx1ZZceJ_7S98-fDU4kPdJVVmy/view?usp=drive_link"
+                    href="https://drive.google.com/file/d/1veUjNdoG9zAmD78iNwt3asB6vNxqbRJ8/view?usp=drive_link"
                     className="nav-brand"
                     target="_blank"
                     rel="noopener noreferrer"
