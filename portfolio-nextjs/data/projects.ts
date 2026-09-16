@@ -42,7 +42,7 @@ export const projects: Project[] = [
     {
         id: '3',
         title: 'AI Nutritional Health Assistant: Personalized Guidance for Indian Diets',
-        description: 'Designed an agentic nutrition assistant (FastAPI + Next.js, LangGraph) with two-stage hybrid retrieval (BM25 + FAISS→RRF→cross-encoder re-ranking), 25+ health metric computations, and Gemma-4 via NVIDIA NIM- achieving 90% accuracy vs ∼62% naive search across 100+ real-world health scenarios.',
+        description: 'Built a two-stage hybrid retrieval pipeline (BM25 + FAISS → RRF → cross-encoder re-ranking) over a structured nutrition knowledge base (FastAPI + Next.js, LangGraph), with PostgreSQL for feature aggregation across 25+ health metrics and Gemma-4 via NVIDIA NIM — achieving 90% accuracy vs ∼62% naive search across 100+ real-world health scenarios.',
         githubUrl: 'https://github.com/theankitdash/AI-Nutritional-Health-Assistant-Personalized-Guidance-for-Indian-Diets',
         skills: ['FastAPI', 'LangGraph', 'Hybrid RAG', 'FAISS', 'LLM'],
         videoUrl: '', // User will add later
@@ -51,7 +51,7 @@ export const projects: Project[] = [
     {
         id: '2',
         title: 'Personal Finance System for Expense Tracking and Analysis',
-        description: ' Engineered a containerized ML platform (FastAPI + Node.js, Docker Compose) with multivariate anomaly detection (LOF, One-Class SVM, PyTorch autoencoder), category-level forecasting (XGBoost/RF/GBM), Jensen Shannon drift detection, and semantic clustering via REST APIs- processing 10,000+ transactions in ∼3s.',
+        description: ' Engineered a containerized data platform (FastAPI + Node.js, Docker Compose) with multivariate anomaly detection (LOF, One-Class SVM, PyTorch autoencoder), category-level forecasting (XGBoost/RF/GBM), Jensen Shannon drift detection, and semantic clustering via REST APIs- processing 10,000+ transactions in ∼3s.',
         githubUrl: 'https://github.com/theankitdash/Personal-Finance-System-for-Expense-Tracking-and-Analysis',
         skills: ['PyTorch', 'Machine Learning Algorithms', 'Statistical Data Analysis', 'REST APIs', 'Docker'],
         videoUrl: '', // User will add later
