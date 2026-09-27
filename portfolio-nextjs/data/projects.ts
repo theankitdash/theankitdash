@@ -43,7 +43,7 @@ export const projects: Project[] = [
         id: '3',
         title: 'Hybrid Retrieval Data Pipeline - AI Nutritional Health Assistant',
         description: 'Built a two-stage hybrid retrieval pipeline (BM25 + FAISS → RRF → cross-encoder re-ranking) over a structured nutrition knowledge base (FastAPI + Next.js, LangGraph), with PostgreSQL for feature aggregation across 25+ health metrics and Qwen3.8-27B via Groq API — achieving 90% accuracy vs ∼62% naive search across 100+ real-world health scenarios.',
-        githubUrl: 'https://github.com/theankitdash/AI-Nutritional-Health-Assistant-Personalized-Guidance-for-Indian-Diets',
+        githubUrl: 'https://github.com/theankitdash/Hybrid-Retrieval-Data-Pipeline---AI-Nutritional-Health-Assistant',
         skills: ['FastAPI', 'LangGraph', 'Hybrid RAG', 'FAISS', 'LLM'],
         videoUrl: '', // User will add later
         featured: false
