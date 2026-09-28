@@ -45,7 +45,7 @@ export default function AboutPage() {
                     <h1 className="text-center mb-3">About Me</h1>
                     <div className="intro text-center">
                         <p style={{ fontSize: '1.2rem', color: '#B0B0B0', maxWidth: '700px', margin: '0 auto 3rem' }}>
-                            I build with code, edit with intent, roam without roots, and study films like systems—technology is the thread tying it all together.
+                            I build with code, edit with intent, roam without roots, and study films like systems - technology is the thread tying it all together.
                         </p>
                     </div>
                 </ScrollReveal>
